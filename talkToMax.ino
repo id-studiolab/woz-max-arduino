@@ -55,7 +55,7 @@ const byte kD5Pin = 5;
 const byte kD6Pin = 6;
 
 long lastSensorValuesWrittenMark = 0;   // Remember the last time data was send
-int sensorSampleInterval = 1000;  // Send sensor date every N milliseconds
+int sensorSampleInterval = 40;  // Send sensor date every N milliseconds
 
 // Setup function
 void setup()
