@@ -10,4 +10,4 @@ In order to compile the Arduino code (talkToMax.ino) you will need to download t
 This tool was originally created for Interactive Technlogy Design, a course in the master program Design for Interaction at the TUDelft.
 
 Contributors:
-Aadjan van der Helm, Tomasz Jaskiewicz, Roy Graafmans
+Aadjan van der Helm, Tomasz Jaskiewicz, Roy Graafmans, Richard Bekking
