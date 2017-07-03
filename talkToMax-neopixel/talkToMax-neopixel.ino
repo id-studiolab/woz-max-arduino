@@ -1,5 +1,5 @@
 #include <CmdMessenger.h>  // CmdMessenger
-#include <ChainableLED.h>
+#include <Adafruit_NeoPixel.h>
 
 // Uncomment the line below if you want debug information printed
 // #define DEBUG 1
@@ -25,8 +25,8 @@ enum
 CmdMessenger cmdMessenger = CmdMessenger(Serial, ' ', '\n', '/');
 
 // Variable to control the Chainable LEDs attached to D7 & D8 (here 4 LEDs)
-const byte kNumLeds = 4;
-ChainableLED leds(8, 9, kNumLeds);
+const byte kNumLeds = 9;
+Adafruit_NeoPixel pixels = Adafruit_NeoPixel(kNumLeds, 7, NEO_GRB + NEO_KHZ800);
 
 // Constants to index the LED arrays to set/obtain the intended color value
 const byte kRed = 0;
@@ -34,7 +34,7 @@ const byte kGreen = 1;
 const byte kBlue = 2;
 
 // Memory for mainting the current actuator and sensors variables
-byte D2_value = 0; 
+byte D2_value = 0;
 byte D3_value = 0;
 byte D4_value = 0;
 byte D5_value = 0;
@@ -70,7 +70,7 @@ void setup()
   attachCommandCallbacks();
 
   // Prepare the LEDs for operation
-  leds.init();
+  pixels.begin(); // This initializes the NeoPixel library.
   DoLightShow();
 
   pinMode(kD2Pin, OUTPUT);
@@ -144,10 +144,11 @@ void SetActuators()
   analogWrite(kD5Pin, D5_value);
   analogWrite(kD6Pin, D6_value);
 
-  leds.setColorRGB(0, LED1_color[kRed], LED1_color[kGreen], LED1_color[kBlue]);
-  leds.setColorRGB(1, LED2_color[kRed], LED2_color[kGreen], LED2_color[kBlue]);
-  leds.setColorRGB(2, LED3_color[kRed], LED3_color[kGreen], LED3_color[kBlue]);
-  leds.setColorRGB(3, LED4_color[kRed], LED4_color[kGreen], LED4_color[kBlue]);
+ pixels.setPixelColor(0, pixels.Color(LED1_color[kRed], LED1_color[kGreen], LED1_color[kBlue]));
+ pixels.setPixelColor(1, pixels.Color(LED2_color[kRed], LED2_color[kGreen], LED2_color[kBlue]));
+ pixels.setPixelColor(2, pixels.Color(LED3_color[kRed], LED3_color[kGreen], LED3_color[kBlue]));
+ pixels.setPixelColor(3, pixels.Color(LED4_color[kRed], LED4_color[kGreen], LED4_color[kBlue]));
+  pixels.show(); // This sends the updated pixel color to the hardware.
 }
 
 // Callbacks define on which received commands we take action
@@ -339,16 +340,20 @@ void OnSetRGBLED()
 void DoLightShow()
 {
   for (byte i = 0; i < kNumLeds; i++)
-    leds.setColorRGB(i, 255, 255, 255);
+    pixels.setPixelColor(i, pixels.Color(255,255,255));
+  pixels.show(); // This sends the updated pixel color to the hardware.
   delay(100);
   for (byte i = 0; i < kNumLeds; i++)
-    leds.setColorRGB(i, 0, 0, 0);
+    pixels.setPixelColor(i, pixels.Color(0,0,0));
+  pixels.show(); // This sends the updated pixel color to the hardware.
   delay(100);
   for (byte i = 0; i < kNumLeds; i++)
-    leds.setColorRGB(i, 255, 255, 255);
+    pixels.setPixelColor(i, pixels.Color(255,255,255));
+  pixels.show(); // This sends the updated pixel color to the hardware.
   delay(100);
   for (byte i = 0; i < kNumLeds; i++)
-    leds.setColorRGB(i, 0, 0, 0);
+    pixels.setPixelColor(i, pixels.Color(0,0,0));
+  pixels.show(); // This sends the updated pixel color to the hardware.
   delay(100);
 }
 
