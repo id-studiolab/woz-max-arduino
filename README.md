@@ -4,17 +4,17 @@ A system to involve Arduino and Max for the purpose of creating interactive expe
 Check the source code for instructions.
 
 Available serial commands:
- 0          - This command list
- 1  <value> - sensor sampling interval (in milliseconds)
- 2  <value> - Set D2 state 0 = LOW, 1 = HIGH
- 3  <value> - Set D3 PWM value 0 - 255
- 4  <value> - Set D4 state 0 = LOW, 1 = HIGH
- 5  <value> - Set D5 PWM value 0 - 255
- 6  <value> - Set D6 PWM value 0 - 255
- 7  <red-value> <green-value> <blue-value> - Set LED1 color, values 0 - 255
- 8  <red-value> <green-value> <blue-value> - Set LED2 color, values 0 - 255
- 9  <red-value> <green-value> <blue-value> - Set LED3 color, values 0 - 255
- 10 <red-value> <green-value> <blue-value> - Set LED4 color, values 0 - 255
+- 0          - This command list
+- 1  <value> - sensor sampling interval (in milliseconds)
+- 2  <value> - Set D2 state 0 = LOW, 1 = HIGH
+- 3  <value> - Set D3 PWM value 0 - 255
+- 4  <value> - Set D4 state 0 = LOW, 1 = HIGH
+- 5  <value> - Set D5 PWM value 0 - 255
+- 6  <value> - Set D6 PWM value 0 - 255
+- 7  <red-value> <green-value> <blue-value> - Set LED1 color, values 0 - 255
+- 8  <red-value> <green-value> <blue-value> - Set LED2 color, values 0 - 255
+- 9  <red-value> <green-value> <blue-value> - Set LED3 color, values 0 - 255
+- 10 <red-value> <green-value> <blue-value> - Set LED4 color, values 0 - 255
 
 In order to compile the Arduino code (talkToMax.ino) you will need to download two libraries (download as zip and install with the Arduino IDE library manager):
 - Cmdmessenger - [github link](https://github.com/thijse/Arduino-CmdMessenger)
