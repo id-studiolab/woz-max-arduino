@@ -8,3 +8,6 @@ In order to compile the Arduino code (talkToMax.ino) you will need to download t
 - Chainable LEDs - [github link](https://github.com/pjpmarques/ChainableLED)
 
 This tool was originally created for Interactive Technlogy Design, a course in the master program Design for Interaction at the TUDelft.
+
+Contributors:
+Aadjan van der Helm, Tomasz Jaskiewicz, Roy Graafmans
