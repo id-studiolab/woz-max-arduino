@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 40.0, 79.0, 1366.0, 787.0 ],
+		"rect" : [ 85.0, 79.0, 1366.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -323,7 +323,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 15.0, 671.375, 116.0, 22.0 ],
+					"patching_rect" : [ 15.0, 681.462463, 116.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5736,7 +5736,7 @@
 				"box" : 				{
 					"fontname" : "Trebuchet MS",
 					"id" : "obj-38",
-					"items" : [ "Select a port", ",", "Bluetooth-Incoming-Port", ",", "usbmodem1421" ],
+					"items" : [ "Select a port", ",", "Bluetooth-Incoming-Port" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
