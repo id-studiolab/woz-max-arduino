@@ -125,7 +125,7 @@ void SerialWriteSensorValues()
   if (millis() > (lastSensorValuesWrittenMark + sensorSampleInterval))
   {
     // Send all values on one line separated by spaces to Max
-    Serial.print("sensors ");
+    Serial.print("s ");
     Serial.print(A0_value);
     Serial.print(" ");
     Serial.print(A1_value);
