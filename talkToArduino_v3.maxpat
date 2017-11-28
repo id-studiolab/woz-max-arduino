@@ -4135,6 +4135,18 @@
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-7",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 87.0, 427.5, 99.0, 22.0 ],
+													"style" : "",
+													"text" : "send to_network"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-2",
 													"maxclass" : "toggle",
 													"numinlets" : 1,
@@ -4749,7 +4761,16 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-7", 0 ],
+													"order" : 0,
+													"source" : [ "obj-8", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-91", 0 ],
+													"order" : 1,
 													"source" : [ "obj-8", 0 ]
 												}
 
