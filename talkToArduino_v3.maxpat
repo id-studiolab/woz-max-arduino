@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 422.0, 221.0, 1122.0, 914.0 ],
+		"rect" : [ 195.0, 90.0, 1024.0, 768.0 ],
 		"openrect" : [ 0.0, 0.0, 1024.0, 768.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
@@ -97,7 +97,6 @@
 					}
 ,
 					"patching_rect" : [ 497.0, 732.666626, 150.0, 22.0 ],
-					"presentation_rect" : [ 497.0, 732.666626, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -120,7 +119,6 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 556.5, 367.0, 240.0, 33.0 ],
-					"presentation_rect" : [ 559.0, 367.0, 0.0, 0.0 ],
 					"style" : "",
 					"suppressinlet" : 1,
 					"text" : "See the patch to the right for inspiration or help with designing your own behaviour."
@@ -567,9 +565,9 @@
 , 											{
 												"name" : "jpatcher001",
 												"default" : 												{
+													"fontsize" : [ 12.0 ],
 													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
-													"fontname" : [ "Arial" ],
-													"fontsize" : [ 12.0 ]
+													"fontname" : [ "Arial" ]
 												}
 ,
 												"parentstyle" : "",
@@ -750,9 +748,9 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
+									"fontsize" : [ 12.0 ],
 									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
-									"fontname" : [ "Arial" ],
-									"fontsize" : [ 12.0 ]
+									"fontname" : [ "Arial" ]
 								}
 ,
 								"parentstyle" : "",
@@ -1192,9 +1190,9 @@
 , 											{
 												"name" : "jpatcher001",
 												"default" : 												{
+													"fontsize" : [ 12.0 ],
 													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
-													"fontname" : [ "Arial" ],
-													"fontsize" : [ 12.0 ]
+													"fontname" : [ "Arial" ]
 												}
 ,
 												"parentstyle" : "",
@@ -1375,9 +1373,9 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
+									"fontsize" : [ 12.0 ],
 									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
-									"fontname" : [ "Arial" ],
-									"fontsize" : [ 12.0 ]
+									"fontname" : [ "Arial" ]
 								}
 ,
 								"parentstyle" : "",
@@ -1817,9 +1815,9 @@
 , 											{
 												"name" : "jpatcher001",
 												"default" : 												{
+													"fontsize" : [ 12.0 ],
 													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
-													"fontname" : [ "Arial" ],
-													"fontsize" : [ 12.0 ]
+													"fontname" : [ "Arial" ]
 												}
 ,
 												"parentstyle" : "",
@@ -2000,9 +1998,9 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
+									"fontsize" : [ 12.0 ],
 									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
-									"fontname" : [ "Arial" ],
-									"fontsize" : [ 12.0 ]
+									"fontname" : [ "Arial" ]
 								}
 ,
 								"parentstyle" : "",
@@ -2968,8 +2966,8 @@
 , 							{
 								"name" : "bigger yellow",
 								"default" : 								{
-									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ],
-									"fontsize" : [ 18.0 ]
+									"fontsize" : [ 18.0 ],
+									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2978,10 +2976,10 @@
 , 							{
 								"name" : "dangerous_patches",
 								"default" : 								{
-									"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
-									"fontname" : [ "Arial" ],
 									"fontsize" : [ 12.0 ],
-									"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ]
+									"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
+									"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ],
+									"fontname" : [ "Arial" ]
 								}
 ,
 								"parentstyle" : "",
@@ -3004,9 +3002,9 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
+									"fontsize" : [ 12.0 ],
 									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
-									"fontname" : [ "Arial" ],
-									"fontsize" : [ 12.0 ]
+									"fontname" : [ "Arial" ]
 								}
 ,
 								"parentstyle" : "",
@@ -3015,9 +3013,9 @@
 , 							{
 								"name" : "white on black",
 								"default" : 								{
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"fontface" : [ 0 ],
-									"fontsize" : [ 14.0 ]
+									"fontsize" : [ 14.0 ],
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3121,23 +3119,6 @@
 					"style" : "",
 					"suppressinlet" : 1,
 					"text" : "Use the elements to control lamps, servos, etc."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autofit" : 1,
-					"data" : [ 2738, "png", "IBkSG0fBZn....PCIgDQRA....H....fHX....vv9D1x....DLmPIQEBHf.B7g.YHB..JjVRDEDU3wY6c1cPiiDC.ViLuubUv4sBtPEPnBVnB1PE.aEbrU.PEP1J.1JfPEPtJ.2AvV.R5dHxASH+33nwyLN96k8GLi8XIqQyLRZbPGCQjb.fbl4g..eA.Xf9iFfHdXcZCl42..lp+yo..+AQbB.Pgy4Jr74Mz3B8CvthHxPUXeLrEB4lREkimPDm3btI9794aRNE.8K7SYl+Fh3vv9zLCl4IHh+F.3gTyBQRn.TQn+cDwAa55CILySQD+EjfJCQGhHmRDcujnnO6mF52iqinyBfHxg..iXlu.QLOzOOV.ybAh3s..icN2ag94oJQiBfHxgLyWB.bgucjKTnNPdKh3MwhhPvU.1GD7KRLoHDTE.QjSYlutqXpeaQGZ3GNm6gP8LDDE.Qjbl46hkowEZzoQddHl0.112Phnq..doW3+N56hWz2MsJslE.8q96i84wGZz0Q3r1xZPqXAPDYDy7y8B+MCh3.l4mEQF0F2OuaAfH5ZDwK888oKBy7MYYY+vm2Cuo.nSu6w9u52MzgDNwWSWzKCAHhLn2juMTYHAu7tzbK.pv+w8kE0osfY9M0RvzMe00GSU.5E99EenDX1P.pWqO2K78G56VSmgfIV.zwmd1h1pmZyQVXIXms.TZ1eWamd1NXlezBGC2IK.8i4GVrvmfFq.nyy+4TYm7XlmB.TFPm+YEW1eC.jC.jmP8qBDwiZ55DzXE.hnncd959sOAQ7I.foMMxcEQFB.LfY9X.fgwpkNl4oYYYG0Z2PhnqawPqq136XvSlEih2QD8Zn6qKBQz09peu3KgQgtyVEhnWIhtRlE4vs06fCIhtJBUDF46NddL0oIhtSlEDoAAQUDB7qg4nxlbu0gIhdNzcRQDgH5EY13yQAhHChn2M9Y8XhEMccb9nzYL0hTvw7HKRDIOzcJQ7PGyCHwiOR4l0oHhdLz8FokhPFKPh.k.hHaVcVQjSifNyUlzYZQhjgC1soDKy7x8kP1CHhtyHYRqSncLTkcq0eo0tYPLyWFxkDsLwIB08eWAQ77.e+y0rtZ6Ql80enmy+Paekz9D5YOoxvUZEXkV.zu9C1zsXlGm5UeC...Q7FcuIB08+v0YEXoaFjLam9dITJ.51b90Pm3jVAQzUHh+ant+q684pr.LJv670scEgO..fHNNv2+CA.Fsre1Rs.PD8Rf2O7u5qTiRlEEMGpEVJ.QbJ.va9d3lPu84LyEYYYeciWnD348SDcu0cd48cu6k0beeU2lauX4KzNCpr40EHBpIOir7EurkaTi50r4eoJhLzauwpee6Seb4V3gLG.3Eq67aI+kUi+KMzYV0ooirbXHYlkkWsp81A9vvqK5DXPqnULySrz4OMcz2ZS55TmLcEHiHmZ+fL9CJ.LyeuceV9DOYUCIhLZWJBEHhCEiGJfYtvx1qgOCePFOWAPDIOzA4oVOdMAl4cdd2LyVaQrv31aqAQbfTYqhqZAHFJngljyahHCLZZr+iAsQLxbY8bE.l4uElmk2wpwIMbnrnLxi1UpJqOn7uD5h1DybgtjoenTs2PkhnLeEfYIcRvopr9..lm.DAE0j8mF2VDoz4oBXVl87e50WloOKqF9akBfo4heLksQhHCcN2jC...l4gH15ULtZi9hKW+mexWEQD.fYSiTudSLciH9eVzN.Lec.hFzkBeR4P.GGvmEyvxgwXleKKKarUsGDeCKcL.u6DXr8vEbrNZdhAmrWfA...py+OpLOEZzfQw552aLLM64fHdnHR9APj3YZr.y73rrLS+5WWQwbKaSiHGK2W7d7ivWa2KrtMs.l4gG.yNZ016wWBecYWGYc6ZDeAgdG.8lvWa61Iu8aFCh2I+2Rn0iWuH7EQNEQLpb9aQbDQutGOKfycN2XezvRBT.sXleyIkKi19G9T3mLEJ6C17kzsPC2qy7UT.mRBe.1yT.7UAWtjTS3C..6aCAbR+W9ej8oYAbtGE9I64ivdgB.y7MdzguS0u7y8Q66a57CArqkR00QnS5SKny6DndfLZpvWGu+9PGFcVPmdH.MQSlXYaVYAdFZY6FJ5zV.zircyHEVcuskN6RAW6zgtlzEE9LyugfwQ9ZDwDqZntnvWYZm0G.8rBvDzS57tlvG.XlSfcUK.EVzHZRllbKvSMYJBq93SIowJu+ivn40R9iSyJnN2o9ky4r5HwqKuPYmfPDjxxwJwV173AJPmyUDxBYXjSWcr+YQCjyUTNKftpif8rZlBv6KErYSYpmjgm.PU.rrzrzSZPoLetmxcMucYl+oAMyeiHNxf1I5nbVRyU.Hh5L6vUOqGl4IYYYm.PksCFQ72g6Qpm1jpx5pCAjCguJg1S6v7pE5bK.55AzOcvNNLySWYohEQ7Ws9STOsJKJiiwhEs2fY9Ac7uB38E+Z..PNy72h8D4zH9Pwh9SaXBQz8csWDLy+DQ7lMEbnhH4Ly+aWcpeLyOjkkcV0+uOEPHcogATeZNJKK6p5DYvNmqPSU7S5h6Oxxjsw5QFyNCy7TMO.ajfLUS0qUwphQxkFRXVGMssMURBzF+Ury4dCQ7rthkfUISWULANNk63VkLHNmKoO4RKQkkiW1OaoJ.5KujzJflLHlUi+bN23X3fdXGYkGCeqLpfC8IdYSwGNwlxCIpCGdyp94qTAHgsBXcE9D.Cywf.vZODNWafSpdB+bpLi.qyFnpjhaWdcxL50lXHpmvojSPE9pgSQ+.PD+wlbFdiYFjy4dnrN7umSREgv00Y3ZE67oxdDzODvGnVm+x0J2.0sJ1hPrxqfHl6iX425yOPeCy7Oq6odZsSNzrrrqRj3EvGaj0POzldAl4oYYYWU2qeqReJc2xdNlyTVeLLPpr2HM4LOdqRO7TXoQ0gAtzp1SD4xTP3Cvbu9K79MhH5ZqNRy8AVcDvKyN54eMz8m5.QTiJK8MNCZIhh5Bi3tVVXkDppfni6eTS9cabEBAQ7jXdwQzi.9GkFbnXJhLLgD9EHhmzze+Fq.jB6WtJ.ejH5NoxIl8pPDImH5N.fTQ3WV4yadbOrqODoloR.feuXtPpGbVGmRYFkUU9bqphFC..d1h1pmZyQVT16MoJgoOHd4b2omkx4VclGXhEfRRogCRQ7wAdgoJ..zqD3K70och4EJRmyMM1mhXpQ4T87wQci4V.JQ5XwUenXWyugMg2JUrNm6srrriXlWY.I1y5QOTK8xgcQIdyBPUDQFwLecueA0Cc79e3qi4lpzJJ..LeqjuueHg0iZx+rVYW8fV7DCQS7xiRgHKJTvL+S0jeQacOaMK.UQsFbWJszq9Dl4IZ5rUz126fbdAnVCNA.3r84oKp88yxxxNIDBe.BjEfpnSW7R.fK1WbRT2A0aqSQqv2DbEfR1GTDhIAeIQiBPIxrv5dDy7EoRr3sIzUx6V.fwwhfOIPD4Thn6a4vqyLzm8ntdKEcV.VFxrn44Tl4uG6qifNO9eA.7PnbraaHIT.pREkguEKSiTmF2ugDQnWkjSAXQjYAv4P.fiA.F3aGHUG4lB.7Dhn4GMssMIuBvhnVHxUkhu.ueruTakiJBYP+y+nwQXQp8E9l3+AwUYjnpQFX4K.....IUjSD4pPfIH" ],
-					"embed" : 1,
-					"forceaspect" : 1,
-					"hint" : "You can add as many LEDs as needed",
-					"id" : "obj-12",
-					"maxclass" : "fpic",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 716.0, 428.166687, 20.0, 20.0 ],
-					"pic" : "help-white.png"
 				}
 
 			}
@@ -6286,7 +6267,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 14.0,
 					"id" : "obj-87",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -6332,7 +6312,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 349.0, 372.0, 117.0, 24.0 ],
+					"patching_rect" : [ 349.0, 372.0, 117.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -7485,7 +7465,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 356.0, 1024.0, 4.0 ],
-					"presentation_rect" : [ 0.0, 348.0, 0.0, 0.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"style" : "",
@@ -7505,7 +7484,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 408.0, 1024.0, 4.0 ],
-					"presentation_rect" : [ 0.0, 414.0, 0.0, 0.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"style" : "",
@@ -7788,8 +7766,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-37::obj-137" : [ "swatch[3]", "swatch", 0 ],
 			"obj-33::obj-137" : [ "swatch[8]", "swatch", 0 ],
+			"obj-37::obj-137" : [ "swatch[3]", "swatch", 0 ],
 			"obj-36::obj-137" : [ "swatch[2]", "swatch", 0 ]
 		}
 ,
@@ -7818,8 +7796,8 @@
 , 			{
 				"name" : "bigger yellow",
 				"default" : 				{
-					"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ],
-					"fontsize" : [ 18.0 ]
+					"fontsize" : [ 18.0 ],
+					"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7828,10 +7806,10 @@
 , 			{
 				"name" : "dangerous_patches",
 				"default" : 				{
-					"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
-					"fontname" : [ "Arial" ],
 					"fontsize" : [ 12.0 ],
-					"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ]
+					"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
+					"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ],
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",
@@ -7854,9 +7832,9 @@
 , 			{
 				"name" : "jpatcher001",
 				"default" : 				{
+					"fontsize" : [ 12.0 ],
 					"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
-					"fontname" : [ "Arial" ],
-					"fontsize" : [ 12.0 ]
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",
@@ -7870,9 +7848,9 @@
 , 			{
 				"name" : "white on black",
 				"default" : 				{
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"fontface" : [ 0 ],
-					"fontsize" : [ 14.0 ]
+					"fontsize" : [ 14.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
