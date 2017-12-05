@@ -15,18 +15,18 @@ enum
   kD4              , // Command to control actuator connected to D4
   kD5              , // Command to control actuator connected to D5
   kD6              , // Command to control actuator connected to D6
+  kD7              , // Command to control actuator connected to D7
   kRGBLED1         , // Command to control Chainable LED connected to pin D7/D8
   kRGBLED2         , // Command to control Chainable LED connected to pin D7/D8
   kRGBLED3         , // Command to control Chainable LED connected to pin D7/D8
-  kRGBLED4         , // Command to control Chainable LED connected to pin D7/D8
 };
 
 // Attach a new CmdMessenger object to the default Serial port
 CmdMessenger cmdMessenger = CmdMessenger(Serial, ' ', '\n', '/');
 
-// Variable to control the Chainable LEDs attached to D7 & D8 (here 4 LEDs)
-const byte kNumLeds = 9;
-Adafruit_NeoPixel pixels = Adafruit_NeoPixel(kNumLeds, 7, NEO_GRB + NEO_KHZ800);
+// Variable to control the Chainable LEDs attached to D8 & D9 (here 3 LEDs)
+const byte kNumLeds = 3;
+Adafruit_NeoPixel pixels = Adafruit_NeoPixel(kNumLeds, 8, NEO_GRB + NEO_KHZ800);
 
 // Constants to index the LED arrays to set/obtain the intended color value
 const byte kRed = 0;
@@ -34,7 +34,7 @@ const byte kGreen = 1;
 const byte kBlue = 2;
 
 // Memory for mainting the current actuator and sensors variables
-byte D2_value = 0;
+byte D2_value = 0; 
 byte D3_value = 0;
 byte D4_value = 0;
 byte D5_value = 0;
@@ -42,7 +42,6 @@ byte D6_value = 0;
 byte LED1_color[3] = {0, 0, 0};
 byte LED2_color[3] = {0, 0, 0};
 byte LED3_color[3] = {0, 0, 0};
-byte LED4_color[3] = {0, 0, 0};
 int A0_value = 0;
 int A1_value = 0;
 int A2_value = 0;
@@ -54,8 +53,8 @@ const byte kD4Pin = 4;
 const byte kD5Pin = 5;
 const byte kD6Pin = 6;
 
-long lastSensorValuesWrittenMark = 0;   // Remember the last time data was send
-int sensorSampleInterval = 40;  // Send sensor date every N milliseconds
+unsigned long lastSensorValuesWrittenMark = 0;   // Remember the last time data was send
+unsigned long sensorSampleInterval = 40;  // Send sensor date every N milliseconds
 
 // Setup function
 void setup()
@@ -116,14 +115,16 @@ void MapSensorToActuator()
 {
 
 }
-
+ 
 void SerialWriteSensorValues()
 {
   // Let's send max 25 times per second
-  if (millis() > (lastSensorValuesWrittenMark + sensorSampleInterval))
+  unsigned long timeNow = millis();
+  if (timeNow > (lastSensorValuesWrittenMark + sensorSampleInterval))
   {
     // Send all values on one line separated by spaces to Max
-    Serial.print("sensors ");
+    
+    Serial.print("s ");
     Serial.print(A0_value);
     Serial.print(" ");
     Serial.print(A1_value);
@@ -132,7 +133,7 @@ void SerialWriteSensorValues()
     Serial.print(" ");
     Serial.print(A3_value);
     Serial.print("\n");
-    lastSensorValuesWrittenMark = millis();
+    lastSensorValuesWrittenMark = timeNow;
   }
 }
 
@@ -144,10 +145,9 @@ void SetActuators()
   analogWrite(kD5Pin, D5_value);
   analogWrite(kD6Pin, D6_value);
 
- pixels.setPixelColor(0, pixels.Color(LED1_color[kRed], LED1_color[kGreen], LED1_color[kBlue]));
- pixels.setPixelColor(1, pixels.Color(LED2_color[kRed], LED2_color[kGreen], LED2_color[kBlue]));
- pixels.setPixelColor(2, pixels.Color(LED3_color[kRed], LED3_color[kGreen], LED3_color[kBlue]));
- pixels.setPixelColor(3, pixels.Color(LED4_color[kRed], LED4_color[kGreen], LED4_color[kBlue]));
+  pixels.setPixelColor(0, pixels.Color(LED1_color[kRed], LED1_color[kGreen], LED1_color[kBlue]));
+  pixels.setPixelColor(1, pixels.Color(LED2_color[kRed], LED2_color[kGreen], LED2_color[kBlue]));
+  pixels.setPixelColor(2, pixels.Color(LED3_color[kRed], LED3_color[kGreen], LED3_color[kBlue]));
   pixels.show(); // This sends the updated pixel color to the hardware.
 }
 
@@ -166,7 +166,6 @@ void attachCommandCallbacks()
   cmdMessenger.attach(kRGBLED1, OnSetRGBLED);
   cmdMessenger.attach(kRGBLED2, OnSetRGBLED);
   cmdMessenger.attach(kRGBLED3, OnSetRGBLED);
-  cmdMessenger.attach(kRGBLED4, OnSetRGBLED);
 }
 
 // Called when a received command has no attached function
@@ -193,10 +192,10 @@ void ShowCommands()
   Serial.println(F(" 4  <value> - Set D4 state 0 = LOW, 1 = HIGH"));
   Serial.println(F(" 5  <value> - Set D5 PWM value 0 - 255"));
   Serial.println(F(" 6  <value> - Set D6 PWM value 0 - 255"));
-  Serial.println(F(" 7  <red-value> <green-value> <blue-value> - Set LED1 color, values 0 - 255"));
-  Serial.println(F(" 8  <red-value> <green-value> <blue-value> - Set LED2 color, values 0 - 255"));
-  Serial.println(F(" 9  <red-value> <green-value> <blue-value> - Set LED3 color, values 0 - 255"));
-  Serial.println(F(" 10 <red-value> <green-value> <blue-value> - Set LED4 color, values 0 - 255"));
+  Serial.println(F(" 7  <value> - Set D7 state 0 = LOW, 1 = HIGH"));
+  Serial.println(F(" 8  <red-value> <green-value> <blue-value> - Set LED1 color, values 0 - 255"));
+  Serial.println(F(" 9  <red-value> <green-value> <blue-value> - Set LED2 color, values 0 - 255"));
+  Serial.println(F(" 10 <red-value> <green-value> <blue-value> - Set LED3 color, values 0 - 255"));
 }
 
 // Change the default sensor sampling interval
@@ -318,19 +317,6 @@ void OnSetRGBLED()
       Serial.print(LED3_color[kGreen]);
       Serial.print(" ");
       Serial.println(LED3_color[kBlue]);
-#endif
-      break;
-    case kRGBLED4:
-      LED4_color[kRed] = red;
-      LED4_color[kGreen] = green;
-      LED4_color[kBlue] = blue;
-#ifdef DEBUG
-      Serial.print(F("LED4_color: "));
-      Serial.print(LED4_color[kRed]);
-      Serial.print(" ");
-      Serial.print(LED4_color[kGreen]);
-      Serial.print(" ");
-      Serial.println(LED4_color[kBlue]);
 #endif
       break;
   }
