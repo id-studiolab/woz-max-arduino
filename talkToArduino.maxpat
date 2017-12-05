@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 37.0, 143.0, 1024.0, 768.0 ],
+		"rect" : [ 97.0, 153.0, 1024.0, 768.0 ],
 		"openrect" : [ 0.0, 0.0, 1024.0, 768.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
@@ -2484,7 +2484,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-									"oncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"oncolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 699.0, 524.912537, 20.0, 20.0 ],
@@ -3743,7 +3743,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 140.0, 79.0, 1018.0, 689.0 ],
+						"rect" : [ 461.0, 252.0, 1018.0, 689.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3772,13 +3772,26 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 788.5, 150.0, 79.0, 22.0 ],
+									"style" : "",
+									"text" : "loadmess 40"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-20",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 836.5, 226.0, 95.0, 20.0 ],
+									"patching_rect" : [ 844.5, 192.0, 95.0, 20.0 ],
 									"style" : "",
 									"text" : "default = 40ms"
 								}
@@ -3793,7 +3806,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 780.5, 91.0, 95.0, 47.0 ],
+									"patching_rect" : [ 780.5, 91.0, 95.0, 48.0 ],
 									"style" : "",
 									"text" : "Arduino sensor sample interval (milliseconds)"
 								}
@@ -3803,11 +3816,12 @@
 								"box" : 								{
 									"id" : "obj-17",
 									"maxclass" : "number",
+									"minimum" : 25,
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 796.5, 150.0, 50.0, 22.0 ],
+									"patching_rect" : [ 788.5, 190.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -3819,7 +3833,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 796.5, 180.0, 34.0, 22.0 ],
+									"patching_rect" : [ 788.5, 220.0, 34.0, 22.0 ],
 									"style" : "",
 									"text" : "1 $1"
 								}
@@ -3853,19 +3867,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 796.5, 226.0, 34.0, 22.0 ],
-									"style" : "",
-									"text" : "1 40"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-29",
@@ -3873,7 +3874,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 311.5, 421.0, 248.0, 33.0 ],
+									"patching_rect" : [ 311.5, 421.0, 248.0, 34.0 ],
 									"style" : "",
 									"text" : "The Max object that interfaces with the USB connection to an Arduino"
 								}
@@ -3888,7 +3889,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 203.0, 598.5, 238.0, 33.0 ],
+									"patching_rect" : [ 251.0, 596.5, 238.0, 34.0 ],
 									"style" : "",
 									"text" : "Send the received sensor data onwards in the Max patch"
 								}
@@ -3903,7 +3904,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 59.5, 189.0, 138.0, 47.0 ],
+									"patching_rect" : [ 59.5, 189.0, 138.0, 48.0 ],
 									"style" : "",
 									"text" : "Setup initial parameters for the serial object and start polling"
 								}
@@ -4124,7 +4125,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 203.0, 565.0, 63.0, 22.0 ],
+									"patching_rect" : [ 251.0, 563.0, 63.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -4156,7 +4157,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 305.0, 291.0, 751.0, 494.0 ],
+										"rect" : [ 1086.0, 472.0, 751.0, 494.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -4183,6 +4184,7 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-7",
@@ -4245,7 +4247,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 596.5, 215.5, 135.0, 33.0 ],
+													"patching_rect" : [ 596.5, 215.5, 135.0, 34.0 ],
 													"style" : "",
 													"text" : "Time-out for serial port connection status"
 												}
@@ -4260,7 +4262,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 257.5, 412.5, 140.0, 47.0 ],
+													"patching_rect" : [ 257.5, 412.5, 140.0, 48.0 ],
 													"style" : "",
 													"text" : "Number of messages received per second from the Arduino"
 												}
@@ -4304,7 +4306,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 193.0, 418.5, 54.0, 35.0 ],
+													"patching_rect" : [ 193.0, 418.5, 54.0, 36.0 ],
 													"style" : ""
 												}
 
@@ -4492,7 +4494,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 292.5, 251.0, 135.0, 47.0 ],
+													"patching_rect" : [ 292.5, 251.0, 135.0, 48.0 ],
 													"style" : "",
 													"text" : "Time interval between successive messages from the Arduino"
 												}
@@ -4835,7 +4837,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 203.0, 513.5, 151.0, 22.0 ],
+									"patching_rect" : [ 251.0, 511.5, 151.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -5640,7 +5642,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 459.0, 87.0, 230.0, 47.0 ],
+									"patching_rect" : [ 459.0, 87.0, 230.0, 48.0 ],
 									"style" : "",
 									"text" : "Receive actuator data from somewhere in Max and send it onwards to the connected Arduino"
 								}
@@ -5655,7 +5657,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 567.5, 176.0, 158.0, 60.0 ],
+									"patching_rect" : [ 567.5, 176.0, 158.0, 62.0 ],
 									"style" : "",
 									"text" : "For debugging purposes, enable toggle to show/hide actuator commands in the Max console"
 								}
@@ -5715,7 +5717,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 366.0, 508.0, 215.0, 33.0 ],
+									"patching_rect" : [ 414.0, 506.0, 215.0, 34.0 ],
 									"style" : "",
 									"text" : "Interpret the received data from Arduino, to filter out the sensor data"
 								}
@@ -5758,9 +5760,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 59.5, 351.0, 58.0, 22.0 ],
+									"patching_rect" : [ 59.5, 351.0, 51.0, 22.0 ],
 									"style" : "",
-									"text" : "qmetro 5"
+									"text" : "metro 1"
 								}
 
 							}
@@ -5816,7 +5818,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 59.5, 28.0, 386.0, 74.0 ],
+									"patching_rect" : [ 59.5, 28.0, 386.0, 75.0 ],
 									"style" : "",
 									"text" : "This subpatch works with an Arduino and Grove shield connected. A talkToMax.ino sketch should be uploaded - choose a version based on the type of LEDs you are using.\n\nIf you work with Chainable LED: talkToMax-chainableled.ino"
 								}
@@ -5848,7 +5850,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
-									"midpoints" : [ 806.0, 213.0, 735.0, 213.0, 735.0, 291.0, 468.5, 291.0 ],
+									"midpoints" : [ 798.0, 291.0, 735.0, 291.0, 735.0, 291.0, 468.5, 291.0 ],
 									"source" : [ "obj-13", 0 ]
 								}
 
@@ -5906,8 +5908,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"midpoints" : [ 806.0, 291.0, 468.5, 291.0 ],
+									"destination" : [ "obj-17", 0 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
