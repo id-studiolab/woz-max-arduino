@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 97.0, 153.0, 1024.0, 768.0 ],
+		"rect" : [ 686.0, 150.0, 1024.0, 768.0 ],
 		"openrect" : [ 0.0, 0.0, 1024.0, 768.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
@@ -4184,7 +4184,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-7",
@@ -6377,7 +6376,6 @@
 									"numinlets" : 0,
 									"numoutlets" : 0,
 									"patching_rect" : [ 29.0, 195.0, 102.0, 20.0 ],
-									"presentation_rect" : [ 145.0, 19.0, 0.0, 0.0 ],
 									"style" : "",
 									"suppressinlet" : 1,
 									"text" : "Network ports"
@@ -8195,9 +8193,9 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-36::obj-137" : [ "swatch[2]", "swatch", 0 ],
 			"obj-33::obj-137" : [ "swatch[8]", "swatch", 0 ],
-			"obj-37::obj-137" : [ "swatch[3]", "swatch", 0 ],
-			"obj-36::obj-137" : [ "swatch[2]", "swatch", 0 ]
+			"obj-37::obj-137" : [ "swatch[3]", "swatch", 0 ]
 		}
 ,
 		"dependency_cache" : [  ],
