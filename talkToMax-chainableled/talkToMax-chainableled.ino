@@ -55,8 +55,8 @@ const byte kD5Pin = 5;
 const byte kD6Pin = 6;
 const byte kD7Pin = 7;
 
-long lastSensorValuesWrittenMark = 0;   // Remember the last time data was send
-int sensorSampleInterval = 40;  // Send sensor date every N milliseconds
+unsigned long lastSensorValuesWrittenMark = 0;   // Remember the last time data was send
+unsigned long sensorSampleInterval = 40;  // Send sensor date every N milliseconds
 
 // Setup function
 void setup()
@@ -122,9 +122,11 @@ void MapSensorToActuator()
 void SerialWriteSensorValues()
 {
   // Let's send max 25 times per second
-  if (millis() > (lastSensorValuesWrittenMark + sensorSampleInterval))
+  unsigned long timeNow = millis();
+  if (timeNow > (lastSensorValuesWrittenMark + sensorSampleInterval))
   {
     // Send all values on one line separated by spaces to Max
+    
     Serial.print("s ");
     Serial.print(A0_value);
     Serial.print(" ");
@@ -134,7 +136,7 @@ void SerialWriteSensorValues()
     Serial.print(" ");
     Serial.print(A3_value);
     Serial.print("\n");
-    lastSensorValuesWrittenMark = millis();
+    lastSensorValuesWrittenMark = timeNow;
   }
 }
 
