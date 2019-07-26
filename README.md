@@ -1,7 +1,9 @@
 # Max to Arduino/Grove communication
-A system to involve Arduino and Max for the purpose of creating interactive experiences. These companion programs allow for starting quickly with making interactive prototypes in a Wizard of Oz approach. Once interactive behaviour has been prototyped and the fidelity of the prototypes increases, this system allows for making direct mappings between sensors and actuators either in the Max realm or the Arduino realm. As such it leaves the author freedom to choose the path for higher fidelity prototyping.
+A system to involve Arduino and Max(/MSP) for the purpose of creating user experiences with interactive technology. These companion programs allow for starting quickly with making interactive prototypes in a Wizard of Oz approach. Once interactive behaviour has been prototyped and the fidelity of the prototypes increases, this system allows for making direct mappings between sensors and actuators either in the Max realm or the Arduino realm. As such it leaves the author freedom to choose the path for higher fidelity prototyping.
 
 The Max patches and Arduino sketches have established a protocol to exchange sensor and actuator data. In order to make things work make sure the Arduino code is uploaded before attempting to interface the Arduino in Max.
+
+![Example](max-woz-interface-screenshot.png?raw=true "Woz interface in Max patch")
 
 The Arduino code functions much like firmata. Dedicating the Arduino functioning to reporting about changing sensor values and obtaining values to control any connected actuator.
 
