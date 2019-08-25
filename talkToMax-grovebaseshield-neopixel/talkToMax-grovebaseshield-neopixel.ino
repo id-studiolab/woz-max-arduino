@@ -95,7 +95,7 @@ void loop()
   MapSensorToActuator();
 
   // Write serial data for sensors
-  SerialWriteSensorValues();
+//  SerialWriteSensorValues();
 
   // Set actuator values to ports
   SetActuators();
@@ -342,4 +342,3 @@ void DoLightShow()
   pixels.show(); // This sends the updated pixel color to the hardware.
   delay(100);
 }
-
