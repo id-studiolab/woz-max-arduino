@@ -58,7 +58,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 801.0, 482.291655999999989, 65.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Brightness"
 				}
 
@@ -584,8 +583,8 @@
 										"styles" : [ 											{
 												"name" : "Headlines",
 												"default" : 												{
-													"fontsize" : [ 14.0 ],
-													"fontface" : [ 1 ]
+													"fontface" : [ 1 ],
+													"fontsize" : [ 14.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -594,9 +593,9 @@
 , 											{
 												"name" : "jpatcher001",
 												"default" : 												{
-													"fontsize" : [ 12.0 ],
 													"fontname" : [ "Arial" ],
-													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
+													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+													"fontsize" : [ 12.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -620,7 +619,7 @@
 , 							{
 								"box" : 								{
 									"angle" : 0.0,
-									"bgcolor" : [ 0.650980392156863, 0.694117647058824, 0.003921568627451, 1.0 ],
+									"bgcolor" : [ 0.003921568627451, 0.031372549019608, 0.858823529411765, 1.0 ],
 									"bordercolor" : [ 1.0, 0.0, 0.043381, 1.0 ],
 									"id" : "obj-148",
 									"maxclass" : "panel",
@@ -651,12 +650,12 @@
 									"saturation" : 252,
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_invisible" : 1,
-											"parameter_initial" : [ 15 ],
-											"parameter_shortname" : "swatch",
 											"parameter_type" : 1,
 											"parameter_longname" : "swatch[8]",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_invisible" : 1,
+											"parameter_initial" : [ 15 ],
+											"parameter_shortname" : "swatch"
 										}
 
 									}
@@ -764,8 +763,8 @@
 						"styles" : [ 							{
 								"name" : "Headlines",
 								"default" : 								{
-									"fontsize" : [ 14.0 ],
-									"fontface" : [ 1 ]
+									"fontface" : [ 1 ],
+									"fontsize" : [ 14.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -774,9 +773,9 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
 									"fontname" : [ "Arial" ],
-									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
+									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1686,8 +1685,8 @@
 						"styles" : [ 							{
 								"name" : "Headlines",
 								"default" : 								{
-									"fontsize" : [ 14.0 ],
-									"fontface" : [ 1 ]
+									"fontface" : [ 1 ],
+									"fontsize" : [ 14.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1696,8 +1695,8 @@
 , 							{
 								"name" : "Section_Headline",
 								"default" : 								{
-									"fontsize" : [ 14.0 ],
-									"fontface" : [ 0 ]
+									"fontface" : [ 0 ],
+									"fontsize" : [ 14.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1706,8 +1705,8 @@
 , 							{
 								"name" : "bigger yellow",
 								"default" : 								{
-									"fontsize" : [ 18.0 ],
-									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ]
+									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ],
+									"fontsize" : [ 18.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1716,10 +1715,10 @@
 , 							{
 								"name" : "dangerous_patches",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
 									"fontname" : [ "Arial" ],
 									"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
-									"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ]
+									"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1742,9 +1741,9 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
 									"fontname" : [ "Arial" ],
-									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
+									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1753,9 +1752,9 @@
 , 							{
 								"name" : "white on black",
 								"default" : 								{
+									"fontface" : [ 0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontsize" : [ 14.0 ],
-									"fontface" : [ 0 ]
+									"fontsize" : [ 14.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2696,7 +2695,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 238.0, 38.0, 226.0, 33.0 ],
+													"patching_rect" : [ 238.0, 38.0, 228.0, 33.0 ],
 													"text" : "Sensor data received from Analog inputs Lotus board"
 												}
 
@@ -2833,7 +2832,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1086.0, 472.0, 751.0, 494.0 ],
+										"rect" : [ 345.0, 229.0, 751.0, 494.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2860,13 +2859,38 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"visible" : 1,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-17",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 120.5, 339.0, 32.0, 22.0 ],
+													"text" : "print"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-16",
+													"linecount" : 3,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 286.0, 89.0, 50.0, 49.0 ],
+													"text" : "9 128 129 130"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-7",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 87.0, 427.5, 99.0, 22.0 ],
+													"patching_rect" : [ 87.0, 431.5, 99.0, 22.0 ],
 													"text" : "send to_network"
 												}
 
@@ -2894,18 +2918,6 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 453.0, 293.5, 67.0, 22.0 ],
 													"text" : "gate"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-1",
-													"maxclass" : "gswitch2",
-													"numinlets" : 2,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
-													"parameter_enable" : 0,
-													"patching_rect" : [ 308.0, 357.0, 39.0, 32.0 ]
 												}
 
 											}
@@ -3133,8 +3145,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 50.0, 366.0, 47.0, 22.0 ],
-													"text" : "route s"
+													"patching_rect" : [ 50.0, 297.0, 46.0, 22.0 ],
+													"text" : "route 9"
 												}
 
 											}
@@ -3436,7 +3448,16 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-16", 1 ],
+													"order" : 0,
+													"source" : [ "obj-35", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-8", 0 ],
+													"order" : 1,
 													"source" : [ "obj-35", 0 ]
 												}
 
@@ -3452,6 +3473,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-25", 0 ],
 													"source" : [ "obj-5", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-17", 0 ],
+													"source" : [ "obj-8", 1 ]
 												}
 
 											}
@@ -3538,7 +3566,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 193.0, 168.0, 1098.0, 483.0 ],
+										"rect" : [ 192.0, 170.0, 1098.0, 483.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -3596,7 +3624,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 586.0, 132.0, 39.0, 22.0 ],
+													"patching_rect" : [ 626.75, 114.0, 39.0, 22.0 ],
 													"text" : "zl.join"
 												}
 
@@ -3680,8 +3708,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 586.0, 163.0, 75.0, 22.0 ],
-													"text" : "speedlim 20"
+													"patching_rect" : [ 586.0, 163.0, 73.0, 22.0 ],
+													"text" : "speedlim 40"
 												}
 
 											}
@@ -3776,7 +3804,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 586.0, 269.0, 63.0, 22.0 ],
+													"patching_rect" : [ 586.0, 266.0, 63.0, 22.0 ],
 													"text" : "prepend 7"
 												}
 
@@ -5189,8 +5217,8 @@
 						"styles" : [ 							{
 								"name" : "Headlines",
 								"default" : 								{
-									"fontsize" : [ 14.0 ],
-									"fontface" : [ 1 ]
+									"fontface" : [ 1 ],
+									"fontsize" : [ 14.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5199,8 +5227,8 @@
 , 							{
 								"name" : "Section_Headline",
 								"default" : 								{
-									"fontsize" : [ 14.0 ],
-									"fontface" : [ 0 ]
+									"fontface" : [ 0 ],
+									"fontsize" : [ 14.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5209,8 +5237,8 @@
 , 							{
 								"name" : "bigger yellow",
 								"default" : 								{
-									"fontsize" : [ 18.0 ],
-									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ]
+									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ],
+									"fontsize" : [ 18.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5219,10 +5247,10 @@
 , 							{
 								"name" : "dangerous_patches",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
 									"fontname" : [ "Arial" ],
 									"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
-									"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ]
+									"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5245,9 +5273,9 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
 									"fontname" : [ "Arial" ],
-									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
+									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5261,9 +5289,9 @@
 , 							{
 								"name" : "white on black",
 								"default" : 								{
+									"fontface" : [ 0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontsize" : [ 14.0 ],
-									"fontface" : [ 0 ]
+									"fontsize" : [ 14.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6452,8 +6480,8 @@
 		"styles" : [ 			{
 				"name" : "Headlines",
 				"default" : 				{
-					"fontsize" : [ 14.0 ],
-					"fontface" : [ 1 ]
+					"fontface" : [ 1 ],
+					"fontsize" : [ 14.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6462,8 +6490,8 @@
 , 			{
 				"name" : "Section_Headline",
 				"default" : 				{
-					"fontsize" : [ 14.0 ],
-					"fontface" : [ 0 ]
+					"fontface" : [ 0 ],
+					"fontsize" : [ 14.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6472,8 +6500,8 @@
 , 			{
 				"name" : "bigger yellow",
 				"default" : 				{
-					"fontsize" : [ 18.0 ],
-					"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ]
+					"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ],
+					"fontsize" : [ 18.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6482,10 +6510,10 @@
 , 			{
 				"name" : "dangerous_patches",
 				"default" : 				{
-					"fontsize" : [ 12.0 ],
 					"fontname" : [ "Arial" ],
 					"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
-					"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ]
+					"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6508,9 +6536,9 @@
 , 			{
 				"name" : "jpatcher001",
 				"default" : 				{
-					"fontsize" : [ 12.0 ],
 					"fontname" : [ "Arial" ],
-					"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
+					"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6524,9 +6552,9 @@
 , 			{
 				"name" : "white on black",
 				"default" : 				{
+					"fontface" : [ 0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontsize" : [ 14.0 ],
-					"fontface" : [ 0 ]
+					"fontsize" : [ 14.0 ]
 				}
 ,
 				"parentstyle" : "",

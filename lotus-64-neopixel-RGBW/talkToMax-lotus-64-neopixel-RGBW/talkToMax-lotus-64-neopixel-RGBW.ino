@@ -16,7 +16,9 @@ enum
   kD5              , // Command to control actuator connected to D5
   kD6              , // Command to control actuator connected to D6
   kRGBW            , // Command to control RGB NeoPixel LED Matrix connected to pin D8
-  kBrightness        // Command to control brightness of LED Matrix
+  kBrightness      , // Command to control brightness of LED Matrix
+  kSensorValues    , // Command to send data back
+  kDebug
 };
 
 // Attach a new CmdMessenger object to the default Serial port
@@ -34,7 +36,7 @@ Adafruit_NeoPixel strip(kNumLeds, neoPixelPin, NEO_GRBW + NEO_KHZ800);
 const byte kRed = 0;
 const byte kGreen = 1;
 const byte kBlue = 2;
-const byte kWhite = 2;
+const byte kWhite = 3;
 
 // Memory for mainting the current actuator and sensors variables
 byte D2_value = 0;
@@ -83,7 +85,7 @@ void setup()
   DoLightShow();
 
   // Show command list
-  ShowCommands();
+  //ShowCommands();
 }
 
 // Loop function
@@ -130,14 +132,20 @@ void SerialWriteSensorValues()
   if (timeNow > (lastSensorValuesWrittenMark + sensorSampleInterval))
   {
     // Send all values on one line separated by spaces to Max
-
-    Serial.print("s ");
-    Serial.print(A0_value);
-    Serial.print(" ");
-    Serial.print(A2_value);
-    Serial.print(" ");
-    Serial.print(A6_value);
-    Serial.print("\n");
+    cmdMessenger.sendCmdStart(kSensorValues);
+    cmdMessenger.sendCmdArg(A0_value);
+    cmdMessenger.sendCmdArg(A2_value);
+    cmdMessenger.sendCmdArg(A6_value);
+    cmdMessenger.sendCmdEnd();
+    /*
+        Serial.print("s ");
+        Serial.print(A0_value);
+        Serial.print(" ");
+        Serial.print(A2_value);
+        Serial.print(" ");
+        Serial.print(A6_value);
+        Serial.print("\n");
+    */
     lastSensorValuesWrittenMark = timeNow;
   }
 }
@@ -154,6 +162,7 @@ void SetActuators()
     strip.setPixelColor(i, strip.Color(Matrix_color[kRed], Matrix_color[kGreen], Matrix_color[kBlue], Matrix_color[kWhite]));
 
   strip.show();
+  delay(5);
 }
 
 // Callbacks define on which received commands we take action
@@ -240,10 +249,10 @@ void OnSetActuator()
       break;
     case kD3:
       D3_value = value;
-#ifdef DEBUG
+      //#ifdef DEBUG
       Serial.print(F("D3_value: "));
       Serial.println(D3_value);
-#endif
+      //#endif
       break;
     case kD4:
       D4_value = value;
@@ -290,8 +299,13 @@ void OnSetRGBW()
   Matrix_color[kGreen] = green;
   Matrix_color[kBlue] = blue;
   Matrix_color[kWhite] = white;
+/*
+  for (byte i = 0; i < kNumLeds; i++)
+    strip.setPixelColor(i, strip.Color(Matrix_color[kRed], Matrix_color[kGreen], Matrix_color[kBlue], Matrix_color[kWhite]));
 
-#ifdef DEBUG
+  strip.show();
+*/
+ #ifdef DEBUG
   Serial.print(F("LED1_color: "));
   Serial.print(Matrix_color[kRed]);
   Serial.print(" ");
@@ -300,15 +314,15 @@ void OnSetRGBW()
   Serial.print(Matrix_color[kBlue]);
   Serial.print(" ");
   Serial.println(Matrix_color[kWhite]);
-#endif
+  #endif
 }
 
 void OnSetBrightness() {
   int brightness = cmdMessenger.readInt16Arg();
   if (cmdMessenger.isArgOk() == 0) return;
-  
+
   Matrix_brightness = constrain(brightness, 0, 255);
-  
+
   strip.setBrightness(Matrix_brightness); // Set BRIGHTNESS
 }
 
