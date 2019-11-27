@@ -93,7 +93,7 @@ void loop()
   MapSensorToActuator();
 
   // Write serial data for sensors
-//  SerialWriteSensorValues();
+  SerialWriteSensorValues();
 
   // Set actuator values to ports
   SetActuators();
