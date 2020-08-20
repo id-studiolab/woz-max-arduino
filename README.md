@@ -10,7 +10,7 @@ The Arduino code functions much like firmata. Dedicating the Arduino functioning
 ![Example](grove-diagram.png?raw=true "Grove Base Shield connections")
 
 In order to compile the Arduino code you will need to download two libraries (download as zip and install with the Arduino IDE library manager):
-- Cmdmessenger - [github link](https://github.com/thijse/Arduino-CmdMessenger)
+- CmdMessengerID - [github link](https://github.com/id-studiolab/Arduino-CmdMessengerID)
 - Chainable LEDs - [github link](https://github.com/pjpmarques/ChainableLED)
 
 ### Available serial commands
