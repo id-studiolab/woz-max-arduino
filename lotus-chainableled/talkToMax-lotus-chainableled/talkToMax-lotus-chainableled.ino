@@ -1,5 +1,6 @@
 #include <CmdMessenger.h>  // CmdMessenger
 #include <ChainableLED.h>
+#include <Servo.h>
 
 // Uncomment the line below if you want debug information printed
 // #define DEBUG 1
@@ -31,6 +32,9 @@ ChainableLED leds(7, 8, kNumLeds);
 const byte kRed = 0;
 const byte kGreen = 1;
 const byte kBlue = 2;
+
+// Create new servo object to control a servo motor  //AJB
+Servo servo; //AJB
 
 // Memory for mainting the current actuator and sensors variables
 byte D2_value = 0; 
@@ -74,7 +78,9 @@ void setup()
   pinMode(kD3Pin, OUTPUT);
   pinMode(kD4Pin, OUTPUT);
   pinMode(kD5Pin, OUTPUT);
-  pinMode(kD6Pin, OUTPUT);
+   //AJB
+  //Attach servo to pin D6 //AJB
+  servo.attach(kD6Pin); //AJB
 
   // Show command list
   ShowCommands();
@@ -138,7 +144,8 @@ void SetActuators()
   analogWrite(kD3Pin, D3_value);
   digitalWrite(kD4Pin, D4_value);
   analogWrite(kD5Pin, D5_value);
-  analogWrite(kD6Pin, D6_value);
+  //AJB analogWrite(kD6Pin, D6_value);
+  servo.write(D6_value); //AJB
 
   leds.setColorRGB(0, LED1_color[kRed], LED1_color[kGreen], LED1_color[kBlue]);
   leds.setColorRGB(1, LED2_color[kRed], LED2_color[kGreen], LED2_color[kBlue]);
