@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 46.0, -947.0, 1024.0, 768.0 ],
+		"rect" : [ 113.0, 79.0, 1029.0, 774.0 ],
 		"openrect" : [ 0.0, 0.0, 1024.0, 768.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
@@ -1136,7 +1136,7 @@
 , 							{
 								"box" : 								{
 									"angle" : 0.0,
-									"bgcolor" : [ 0.003921568627451, 0.992156862745098, 0.992156862745098, 1.0 ],
+									"bgcolor" : [ 0.866666666666667, 0.996078431372549, 0.698039215686274, 1.0 ],
 									"bordercolor" : [ 1.0, 0.0, 0.043381, 1.0 ],
 									"id" : "obj-148",
 									"maxclass" : "panel",
@@ -1744,7 +1744,7 @@
 , 							{
 								"box" : 								{
 									"angle" : 0.0,
-									"bgcolor" : [ 0.992156862745098, 0.168627450980392, 0.741176470588235, 1.0 ],
+									"bgcolor" : [ 0.003921568627451, 0.992156862745098, 0.992156862745098, 1.0 ],
 									"bordercolor" : [ 1.0, 0.0, 0.043381, 1.0 ],
 									"id" : "obj-148",
 									"maxclass" : "panel",
@@ -2372,7 +2372,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-									"oncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"oncolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 699.0, 524.912537000000043, 20.0, 20.0 ],
@@ -2423,7 +2423,7 @@
 									"fontface" : 2,
 									"fontname" : "Trebuchet MS",
 									"id" : "obj-38",
-									"items" : [ "Select a port", ",", "Bluetooth-Incoming-Port", ",", "usbmodem1441301", ",", "Refresh menu" ],
+									"items" : [ "Select a port", ",", "Bluetooth-Incoming-Port", ",", "Refresh menu" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3033,7 +3033,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 325.0, -774.0, 812.0, 548.0 ],
+						"rect" : [ 591.0, 126.0, 812.0, 548.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3061,7 +3061,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-25",
@@ -3070,7 +3069,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 420.0, 306.5, 293.0, 33.0 ],
-									"presentation_linecount" : 7,
 									"text" : "You can combine visual programming with language-based programming throught the js object"
 								}
 
@@ -6130,7 +6128,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 176.0, 106.0, 842.0, 666.0 ],
+						"rect" : [ 454.0, 79.0, 842.0, 666.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6367,7 +6365,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 29.0, 131.0, 31.0, 22.0 ],
+									"patching_rect" : [ 29.0, 102.0, 31.0, 22.0 ],
 									"text" : "r A6"
 								}
 
@@ -6380,7 +6378,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 29.0, 101.0, 32.0, 22.0 ],
+									"patching_rect" : [ 29.0, 72.0, 32.0, 22.0 ],
 									"text" : "r A2"
 								}
 
