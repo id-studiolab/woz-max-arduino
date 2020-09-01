@@ -502,9 +502,9 @@
 , 											{
 												"name" : "jpatcher001",
 												"default" : 												{
-													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
 													"fontname" : [ "Arial" ],
-													"fontsize" : [ 12.0 ]
+													"fontsize" : [ 12.0 ],
+													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -682,9 +682,9 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
 									"fontname" : [ "Arial" ],
-									"fontsize" : [ 12.0 ]
+									"fontsize" : [ 12.0 ],
+									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1110,9 +1110,9 @@
 , 											{
 												"name" : "jpatcher001",
 												"default" : 												{
-													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
 													"fontname" : [ "Arial" ],
-													"fontsize" : [ 12.0 ]
+													"fontsize" : [ 12.0 ],
+													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1290,9 +1290,9 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
 									"fontname" : [ "Arial" ],
-									"fontsize" : [ 12.0 ]
+									"fontsize" : [ 12.0 ],
+									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1718,9 +1718,9 @@
 , 											{
 												"name" : "jpatcher001",
 												"default" : 												{
-													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
 													"fontname" : [ "Arial" ],
-													"fontsize" : [ 12.0 ]
+													"fontsize" : [ 12.0 ],
+													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1744,7 +1744,7 @@
 , 							{
 								"box" : 								{
 									"angle" : 0.0,
-									"bgcolor" : [ 0.003921568627451, 0.992156862745098, 0.992156862745098, 1.0 ],
+									"bgcolor" : [ 0.992156862745098, 0.168627450980392, 0.741176470588235, 1.0 ],
 									"bordercolor" : [ 1.0, 0.0, 0.043381, 1.0 ],
 									"id" : "obj-148",
 									"maxclass" : "panel",
@@ -1898,9 +1898,9 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
 									"fontname" : [ "Arial" ],
-									"fontsize" : [ 12.0 ]
+									"fontsize" : [ 12.0 ],
+									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2372,7 +2372,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-									"oncolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+									"oncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 699.0, 524.912537000000043, 20.0, 20.0 ],
@@ -2423,7 +2423,7 @@
 									"fontface" : 2,
 									"fontname" : "Trebuchet MS",
 									"id" : "obj-38",
-									"items" : [ "Select a port", ",", "Bluetooth-Incoming-Port", ",", "Refresh menu" ],
+									"items" : [ "Select a port", ",", "Bluetooth-Incoming-Port", ",", "usbmodem1441301", ",", "Refresh menu" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2833,8 +2833,8 @@
 , 							{
 								"name" : "bigger yellow",
 								"default" : 								{
-									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ],
-									"fontsize" : [ 18.0 ]
+									"fontsize" : [ 18.0 ],
+									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2843,10 +2843,10 @@
 , 							{
 								"name" : "dangerous_patches",
 								"default" : 								{
-									"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
 									"fontname" : [ "Arial" ],
 									"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ],
-									"fontsize" : [ 12.0 ]
+									"fontsize" : [ 12.0 ],
+									"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2869,9 +2869,9 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
 									"fontname" : [ "Arial" ],
-									"fontsize" : [ 12.0 ]
+									"fontsize" : [ 12.0 ],
+									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3064,18 +3064,57 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-25",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 420.0, 306.5, 293.0, 33.0 ],
+									"presentation_linecount" : 7,
+									"text" : "You can combine visual programming with language-based programming throught the js object"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "number",
+									"maximum" : 1023,
+									"minimum" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 427.0, 355.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 359.0, 445.0, 87.0, 22.0 ],
+									"text" : "myvalue is 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-24",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 470.0, 365.0, 91.0, 22.0 ],
+									"patching_rect" : [ 427.0, 402.0, 103.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"filename" : "example-js.js",
+										"filename" : "woz-example.js",
 										"parameter_enable" : 0
 									}
 ,
-									"text" : "js example-js.js"
+									"text" : "js woz-example.js"
 								}
 
 							}
@@ -3098,7 +3137,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 507.0, 197.5, 118.0, 47.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Each single output value is copied in a list of three (RGB)"
 								}
 
@@ -3111,7 +3149,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 420.0, 24.0, 266.0, 60.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Example of using Max objects to create behaviour over time\nDouble click the object \"p LED-dimming\" to see how it works "
 								}
 
@@ -3124,7 +3161,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 64.0, 245.0, 330.0, 60.0 ],
-									"presentation_linecount" : 5,
 									"text" : "Conditionned threshold:\nWhile input lower than 512 output is 0\nWhile input greater than 512 output is 1\n(Output only if input values moves over the threshold value)"
 								}
 
@@ -3136,7 +3172,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 140.0, 196.0, 48.0, 20.0 ],
-									"presentation_linecount" : 2,
 									"text" : "output"
 								}
 
@@ -3586,6 +3621,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-24", 0 ],
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-19", 2 ],
 									"order" : 0,
 									"source" : [ "obj-16", 0 ]
@@ -3619,6 +3661,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-23", 1 ],
 									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 1 ],
+									"source" : [ "obj-24", 0 ]
 								}
 
 							}
@@ -6374,8 +6423,8 @@
 , 							{
 								"name" : "bigger yellow",
 								"default" : 								{
-									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ],
-									"fontsize" : [ 18.0 ]
+									"fontsize" : [ 18.0 ],
+									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6384,10 +6433,10 @@
 , 							{
 								"name" : "dangerous_patches",
 								"default" : 								{
-									"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
 									"fontname" : [ "Arial" ],
 									"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ],
-									"fontsize" : [ 12.0 ]
+									"fontsize" : [ 12.0 ],
+									"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6410,9 +6459,9 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
 									"fontname" : [ "Arial" ],
-									"fontsize" : [ 12.0 ]
+									"fontsize" : [ 12.0 ],
+									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6437,8 +6486,8 @@
 , 							{
 								"name" : "yellow_patch",
 								"default" : 								{
-									"accentcolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-									"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ]
+									"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
+									"accentcolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 								}
 ,
 								"parentstyle" : "dangerous_patches",
@@ -7630,7 +7679,14 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "woz-example.js",
+				"bootpath" : "~/src/github/woz-max-arduino/nano-iot-lotus-chainableled",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Headlines",
@@ -7655,8 +7711,8 @@
 , 			{
 				"name" : "bigger yellow",
 				"default" : 				{
-					"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ],
-					"fontsize" : [ 18.0 ]
+					"fontsize" : [ 18.0 ],
+					"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7665,10 +7721,10 @@
 , 			{
 				"name" : "dangerous_patches",
 				"default" : 				{
-					"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
 					"fontname" : [ "Arial" ],
 					"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7691,9 +7747,9 @@
 , 			{
 				"name" : "jpatcher001",
 				"default" : 				{
-					"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
 					"fontname" : [ "Arial" ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7718,8 +7774,8 @@
 , 			{
 				"name" : "yellow_patch",
 				"default" : 				{
-					"accentcolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-					"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ]
+					"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
+					"accentcolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 ,
 				"parentstyle" : "dangerous_patches",
