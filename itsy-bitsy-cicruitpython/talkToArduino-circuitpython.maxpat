@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 113.0, 79.0, 1024.0, 768.0 ],
+		"rect" : [ 110.0, 92.0, 1024.0, 768.0 ],
 		"openrect" : [ 0.0, 0.0, 1024.0, 768.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
@@ -112,7 +112,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -260,7 +260,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 5,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -502,8 +502,8 @@
 , 											{
 												"name" : "jpatcher001",
 												"default" : 												{
-													"fontsize" : [ 12.0 ],
 													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+													"fontsize" : [ 12.0 ],
 													"fontname" : [ "Arial" ]
 												}
 ,
@@ -682,8 +682,8 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
 									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+									"fontsize" : [ 12.0 ],
 									"fontname" : [ "Arial" ]
 								}
 ,
@@ -720,7 +720,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -868,7 +868,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 5,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1110,8 +1110,8 @@
 , 											{
 												"name" : "jpatcher001",
 												"default" : 												{
-													"fontsize" : [ 12.0 ],
 													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+													"fontsize" : [ 12.0 ],
 													"fontname" : [ "Arial" ]
 												}
 ,
@@ -1290,8 +1290,8 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
 									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+									"fontsize" : [ 12.0 ],
 									"fontname" : [ "Arial" ]
 								}
 ,
@@ -1328,7 +1328,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1476,7 +1476,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 5,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1718,8 +1718,8 @@
 , 											{
 												"name" : "jpatcher001",
 												"default" : 												{
-													"fontsize" : [ 12.0 ],
 													"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+													"fontsize" : [ 12.0 ],
 													"fontname" : [ "Arial" ]
 												}
 ,
@@ -1898,8 +1898,8 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
 									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+									"fontsize" : [ 12.0 ],
 									"fontname" : [ "Arial" ]
 								}
 ,
@@ -1929,7 +1929,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2073,7 +2073,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2120,7 +2120,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 5,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2372,7 +2372,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-									"oncolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+									"oncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 699.0, 524.912537000000043, 20.0, 20.0 ],
@@ -2423,7 +2423,7 @@
 									"fontface" : 2,
 									"fontname" : "Trebuchet MS",
 									"id" : "obj-38",
-									"items" : [ "Select a port", ",", "Bluetooth-Incoming-Port", ",", "usbmodem144101", ",", "Refresh menu" ],
+									"items" : [ "Select a port", ",", "Bluetooth-Incoming-Port", ",", "usbmodem1431401", ",", "Refresh menu" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2833,8 +2833,8 @@
 , 							{
 								"name" : "bigger yellow",
 								"default" : 								{
-									"fontsize" : [ 18.0 ],
-									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ]
+									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ],
+									"fontsize" : [ 18.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2843,9 +2843,9 @@
 , 							{
 								"name" : "dangerous_patches",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
 									"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
 									"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ],
+									"fontsize" : [ 12.0 ],
 									"fontname" : [ "Arial" ]
 								}
 ,
@@ -2869,8 +2869,8 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
 									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+									"fontsize" : [ 12.0 ],
 									"fontname" : [ "Arial" ]
 								}
 ,
@@ -3027,7 +3027,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3321,7 +3321,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 5,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3737,13 +3737,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 388.0, 252.0, 1018.0, 689.0 ],
+						"rect" : [ 355.0, 114.0, 1018.0, 689.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3771,8 +3771,18 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 111.0, 579.0, 56.0, 22.0 ],
+									"text" : "print port"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
@@ -3926,7 +3936,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 5,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3983,7 +3993,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 238.0, 38.0, 226.0, 33.0 ],
+													"patching_rect" : [ 238.0, 38.0, 228.0, 33.0 ],
 													"text" : "Sensor data received from Analog inputs Lotus board"
 												}
 
@@ -3997,8 +4007,8 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 258.0, 209.0, 33.0, 22.0 ],
-													"text" : "s A6"
+													"patching_rect" : [ 258.0, 209.0, 32.0, 22.0 ],
+													"text" : "s A4"
 												}
 
 											}
@@ -4114,13 +4124,13 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 5,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1086.0, 472.0, 751.0, 494.0 ],
+										"rect" : [ 322.0, 131.0, 857.0, 592.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -4149,6 +4159,29 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-12",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 280.0, 9.0, 35.0, 22.0 ],
+													"text" : "1 2 3"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-9",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 193.0, 53.0, 77.0, 22.0 ],
+													"text" : "print serial-in"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-7",
 													"maxclass" : "newobj",
@@ -4568,6 +4601,13 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-9", 0 ],
+													"source" : [ "obj-12", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-11", 0 ],
 													"source" : [ "obj-13", 0 ]
 												}
@@ -4762,6 +4802,15 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-27", 0 ],
+													"order" : 1,
+													"source" : [ "obj-90", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-9", 0 ],
+													"order" : 0,
 													"source" : [ "obj-90", 0 ]
 												}
 
@@ -4820,7 +4869,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 5,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5542,7 +5591,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 59.5, 244.0, 60.0, 22.0 ],
+									"patching_rect" : [ 59.5, 238.0, 60.0, 22.0 ],
 									"text" : "loadbang"
 								}
 
@@ -5582,7 +5631,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 134.5, 351.0, 80.0, 22.0 ],
+									"patching_rect" : [ 134.5, 351.0, 78.0, 22.0 ],
 									"text" : "baud 115200"
 								}
 
@@ -5684,6 +5733,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
+									"order" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"order" : 1,
 									"source" : [ "obj-2", 0 ]
 								}
 
@@ -6124,7 +6182,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6423,8 +6481,8 @@
 , 							{
 								"name" : "bigger yellow",
 								"default" : 								{
-									"fontsize" : [ 18.0 ],
-									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ]
+									"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ],
+									"fontsize" : [ 18.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6433,9 +6491,9 @@
 , 							{
 								"name" : "dangerous_patches",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
 									"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
 									"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ],
+									"fontsize" : [ 12.0 ],
 									"fontname" : [ "Arial" ]
 								}
 ,
@@ -6459,8 +6517,8 @@
 , 							{
 								"name" : "jpatcher001",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
 									"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+									"fontsize" : [ 12.0 ],
 									"fontname" : [ "Arial" ]
 								}
 ,
@@ -6520,7 +6578,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6823,7 +6881,7 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 264.0, 169.833343505859375, 50.0, 60.0 ],
-					"setminmax" : [ 0.0, 1023.0 ],
+					"setminmax" : [ 0.0, 65536.0 ],
 					"setstyle" : 1,
 					"slidercolor" : [ 0.803922, 0.898039, 0.909804, 1.0 ]
 				}
@@ -6841,7 +6899,7 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 198.0, 170.833343505859375, 50.0, 60.0 ],
-					"setminmax" : [ 0.0, 1023.0 ],
+					"setminmax" : [ 0.0, 65536.0 ],
 					"setstyle" : 1,
 					"slidercolor" : [ 0.803922, 0.898039, 0.909804, 1.0 ]
 				}
@@ -6850,6 +6908,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.3, 0.3, 0.3, 1.0 ],
+					"compatibility" : 1,
 					"contdata" : 1,
 					"id" : "obj-27",
 					"ignoreclick" : 1,
@@ -6859,7 +6918,7 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 128.0, 170.833344000000011, 50.0, 60.0 ],
-					"setminmax" : [ 0.0, 1023.0 ],
+					"setminmax" : [ 0.0, 65536.0 ],
 					"setstyle" : 1,
 					"slidercolor" : [ 0.803922, 0.898039, 0.909804, 1.0 ]
 				}
@@ -6872,7 +6931,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 264.0, 109.833343505859375, 50.0, 20.0 ],
-					"text" : "A6"
+					"text" : "A4"
 				}
 
 			}
@@ -7157,8 +7216,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 264.0, 132.370880126953125, 50.0, 22.0 ],
-					"text" : "r A6"
+					"patching_rect" : [ 264.0, 132.370880126953125, 30.0, 22.0 ],
+					"text" : "r A4"
 				}
 
 			}
@@ -7261,6 +7320,7 @@
 					"candicane6" : [ 0.733333, 0.035294, 0.788235, 1.0 ],
 					"candicane7" : [ 0.878431, 0.243137, 0.145098, 1.0 ],
 					"candicane8" : [ 0.027451, 0.447059, 0.501961, 1.0 ],
+					"compatibility" : 1,
 					"id" : "obj-50",
 					"maxclass" : "multislider",
 					"numinlets" : 1,
@@ -7269,7 +7329,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 459.0, 110.5, 220.0, 190.0 ],
 					"peakcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"setminmax" : [ 0.0, 1023.0 ],
+					"setminmax" : [ 0.0, 65536.0 ],
 					"setstyle" : 5,
 					"settype" : 0,
 					"slidercolor" : [ 0.803922, 0.898039, 0.909804, 1.0 ]
@@ -7292,7 +7352,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-44",
-					"items" : [ "select", "sensor", ",", "A0", ",", "A2", ",", "A6" ],
+					"items" : [ "select", "sensor", ",", "A0", ",", "A2", ",", "A4" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -7681,7 +7741,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "woz-example.js",
-				"bootpath" : "~/src/github/woz-max-arduino/nano-iot-lotus-chainableled",
+				"bootpath" : "~/src/github/woz-max-arduino/nano-iot-lotus-chainableled copy",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -7711,8 +7771,8 @@
 , 			{
 				"name" : "bigger yellow",
 				"default" : 				{
-					"fontsize" : [ 18.0 ],
-					"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ]
+					"accentcolor" : [ 1.0, 0.8, 0.4, 1.0 ],
+					"fontsize" : [ 18.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7721,9 +7781,9 @@
 , 			{
 				"name" : "dangerous_patches",
 				"default" : 				{
-					"fontsize" : [ 12.0 ],
 					"accentcolor" : [ 1.0, 0.219608, 0.4, 1.0 ],
 					"bgcolor" : [ 0.258824, 0.105882, 0.333333, 1.0 ],
+					"fontsize" : [ 12.0 ],
 					"fontname" : [ "Arial" ]
 				}
 ,
@@ -7747,8 +7807,8 @@
 , 			{
 				"name" : "jpatcher001",
 				"default" : 				{
-					"fontsize" : [ 12.0 ],
 					"accentcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
+					"fontsize" : [ 12.0 ],
 					"fontname" : [ "Arial" ]
 				}
 ,
