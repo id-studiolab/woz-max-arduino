@@ -5,6 +5,6 @@
 # If you put them in the code you risk committing that info or sharing it
 
 secrets = {
-    "ssid": "wifi for my soul",
-    "password": "aaabbbcccd",
+    "ssid": "network name here",
+    "password": "network password here",
 }
