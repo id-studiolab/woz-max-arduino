@@ -1,9 +1,9 @@
 ### Change the woz patch to:
-Sensor readings: A0 A2 A4
-Digital actuators: D0 D3
-Analog actuators: D2 D4
-Servo: D7 
-Chainable LED: D8
+* Sensor readings: A0 A2 A4
+* Digital actuators: D0 D3
+* Analog actuators: D2 D4
+* Servo: D7 
+* Chainable LED: D13
 
 The maxpatch should also be altered so it sends the updated commands from the table below.
 
