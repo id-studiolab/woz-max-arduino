@@ -13,23 +13,24 @@ import adafruit_esp32spi.adafruit_esp32spi_socket as socket
 import adafruit_minimqtt as MQTT
 
 try:
-    from secrets import secrets
+    from settings import settings
 except ImportError:
-    print("WiFi secrets are kept in secrets.py, please add them there!")
+    print("Settings import failed")
     raise
+
 # --- Wifi Variables
 esp32_cs = DigitalInOut(board.D9)
 esp32_ready = DigitalInOut(board.D11)
 esp32_reset = DigitalInOut(board.D12)
 spi = busio.SPI(board.SCK, board.MOSI, board.MISO)
 esp = adafruit_esp32spi.ESP_SPIcontrol(spi, esp32_cs, esp32_ready, esp32_reset)
-wifi = adafruit_esp32spi_wifimanager.ESPSPI_WiFiManager(esp, secrets)
-ip = "192.168.69.217"
+wifi = adafruit_esp32spi_wifimanager.ESPSPI_WiFiManager(esp, settings)
+ip = "192.168.1.3"
 
 # --- MQTT Variables
-client_id = "creature1"
-sensors_topic = "/" + client_id + "_sensors"
-actuators_topic = "/" + client_id + "_actuators"
+client_id = "creature" + str(settings['creature_id'])
+sensors_topic = "/" + client_id + "/sensors"
+actuators_topic = "/" + client_id + "/actuators"
 mqtt_client = MQTT.MQTT(broker=ip, port=1883, client_id=client_id)
 
 # --- Message Variables
