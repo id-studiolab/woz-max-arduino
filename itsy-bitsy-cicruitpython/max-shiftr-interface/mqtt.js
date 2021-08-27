@@ -76,6 +76,15 @@ maxApi.addHandler("subscribe", (topic) => {
     }
 });
 
+maxApi.addHandler("unsubscribe", (topic) => {
+    if (connected) {
+        debug('unsubscribed from: ' + topic)
+        client.unsubscribe(topic);
+    } else {
+        debug('client not connected!')
+    }
+});
+
 maxApi.addHandler("publish", (topic, ...args) => {
     if (connected) {
         let messages = "";
