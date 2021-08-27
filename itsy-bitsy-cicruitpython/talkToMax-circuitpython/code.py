@@ -25,7 +25,7 @@ esp32_reset = DigitalInOut(board.D12)
 spi = busio.SPI(board.SCK, board.MOSI, board.MISO)
 esp = adafruit_esp32spi.ESP_SPIcontrol(spi, esp32_cs, esp32_ready, esp32_reset)
 wifi = adafruit_esp32spi_wifimanager.ESPSPI_WiFiManager(esp, settings)
-ip = "192.168.1.3"
+ip = str(settings['ip'])
 
 # --- MQTT Variables
 client_id = "creature" + str(settings['creature_id'])
