@@ -53,7 +53,7 @@ commands = {
 }
 
 # --- Timer Variables
-timer_duration = 0.05
+timer_duration = 0.005
 timer_mark = 0
 
 # --- Board Pin Variables
@@ -223,7 +223,6 @@ def mqtt_loop():
             print("Failed to get data, retrying\n", e)
             wifi.reset()
             mqtt_client.reconnect()
-    time.sleep(1)
 
 
 # --- When connected to the MQTT broker, the client subscribes to the actuators topic.
