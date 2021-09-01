@@ -16,6 +16,9 @@ let client;
 
 let enableDebug = true;
 
+let rate = 150;
+let notLimit = true;
+
 // Adds a handler to Max
 maxApi.addHandler("connect", (h, u, p, c) => {
     host = h;
@@ -86,7 +89,8 @@ maxApi.addHandler("unsubscribe", (topic) => {
 });
 
 maxApi.addHandler("publish", (topic, ...args) => {
-    if (connected) {
+    if (connected && notLimit) {
+        notLimit = false;
         let messages = "";
         for (let i = 0; i < args.length; i++) {
             messages += args[i];
@@ -96,6 +100,7 @@ maxApi.addHandler("publish", (topic, ...args) => {
         }
         debug('sending: ' + messages.toString() + " on topic: " + topic,);
         client.publish(topic, messages.toString());
+        setTimeout(() => { notLimit = true},rate);
     } else {
         debug('client not connected!')
     }
